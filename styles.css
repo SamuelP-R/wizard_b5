@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(104, 101, 101);
+}
+
+.wizard-section{
+    width: 1005px;
+    height: 500%;
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register{
+    width: 990px;
+    height: 700%;
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    box-shadow: 7px 13px 37px #000;
+}
+
+h2 {
+    text-align: center;
+}
