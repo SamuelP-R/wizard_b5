@@ -9,15 +9,48 @@
   </head>
   <body>
     
-    <section class="wizard-section"></section>
+    <section id="form-0" class="wizard-section">
+      <div class="container mt-5">
+        <div class="card bg-light.bg-gradient text-light p-4">
+            
+            <!-- Nav Tabs bien distribuidos -->
+            <ul class="nav nav-tabs d-flex justify-content-between">
+                <li class="nav-item flex-fill text-center">
+                    <a href="#form-1" class="nav-link active" data-bs-toggle="tab">Datos Fiscales</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a href="#form-2" class="nav-link" data-bs-toggle="tab">Domicilio</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a href="#form-3" class="nav-link" data-bs-toggle="tab">Datos de Contacto</a>
+                </li>
+            </ul>
 
+        </div>
+    </div>
+    </section>
+    <div class="tab-content"> 
     <!-- First Section Form1 -->
-     <section id="form-1" class="form-register">
+     <section id="form-1" class="form-register tab-pane fade show active">
         <div>
             <h2>Informacion Fiscal</h2>
         </div>
-        <div>
-            <p><b>Ingrese los datos Fiscales correspodientes</b></p>
+        <div class="d-flex align-items-center">
+            <p class="mb-0 me-2"><b>Ingrese los datos Fiscales correspodientes</b></p>
+            <button type="button" class="btn btn-danger" id="liveToastBtn">?</button>
+
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Advertencia</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Verificar que los datos a ingresar sean iguales a la Constancia de Situacion Fiscal.
+    </div>
+  </div>
+</div>
         </div>
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
@@ -99,10 +132,188 @@
                 </div>
                 <br><hr>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
+              <button class="btn btn-primary next-step" >Siguiente</button>
             </div>
           </form>
      </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- End first form-1 -->
+
+    <!-- Secound form-1 -->
+     <section id="form-2" class="wizard-section tab-pane fade">
+      <div>
+        <h2>Domicilio</h2>
+    </div>
+    <div class="d-flex align-items-center">
+        <p class="mb-0 me-2"><b>Ingrese los datos de contacto</b></p>
+        <button type="button" class="btn btn-danger" id="liveToastBtn">?</button>
+
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast-header">
+  <img src="..." class="rounded me-2" alt="...">
+  <strong class="me-auto">Advertencia</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>
+<div class="toast-body">
+  Verificar que los datos a ingresar sean iguales a la Constancia de Situacion Fiscal.
+</div>
+</div>
+</div>
+    </div>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label">Calle</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Ingresa la Calle
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom02" class="form-label">No. Ext</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Ingresa el No. Ext.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustomUsername" class="form-label">No. Int.</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Ingrese el No. Int.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Colonia</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Ingresa la Colonia
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa la Ciudad
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Municipio</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa en Municipio
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom03" class="form-label">Estado</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa el estado
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Pais</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa el Pais
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustomUsername" class="form-label">Codigo Postal</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">#</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Referencia</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa la Referencia
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Clave Pais</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa la Clave Pais
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Residencia Fiscal</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingresa el Resiencia Fiscal
+          </div>
+        </div>
+            <br><hr>
+        <div class="col-12">
+          <button class="btn btn-secondary prev-step">Anterior</button>
+          <button class="btn btn-primary next-step">Siguiente</button>
+        </div>
+      </form>
+     </section>
+
+      <!-- Tercer form-3 -->
+      <section id="form-3" class="wizard-section tab-pane fade">
+        <div>
+          <h2>Domicilio</h2>
+      </div>
+      <div class="d-flex align-items-center">
+          <p class="mb-0 me-2"><b>Ingrese los datos de contacto</b></p>
+          <button type="button" class="btn btn-danger" id="liveToastBtn">?</button>
+  
+  <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Advertencia</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Verificar que los datos a ingresar sean iguales a la Constancia de Situacion Fiscal.
+  </div>
+  </div>
+  </div>
+      </div>
+      <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Calle</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+              Ingresa la Calle
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom02" class="form-label">No. Ext</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Ingresa el No. Ext.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustomUsername" class="form-label">No. Int.</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Ingrese el No. Int.
+              </div>
+            </div>
+          </div>
+          
+              <br><hr>
+          <div class="col-12">
+            <button class="btn btn-secondary prev-step">Anterior</button>
+            <button class="btn btn-primary next-step">Siguiente</button>
+          </div>
+        </form>
+       </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scritp.js"></script>
   </body>
 </html>
