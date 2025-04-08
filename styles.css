@@ -8,20 +8,20 @@ body{
     background-color: white;
     padding: 25px;
     margin: auto;
-    margin-top: 45px;
-    border-radius: 4px;
+    margin-top: 75px;
+    border-radius: 10px;
     font-family: 'calibri';
     box-shadow: 7px 13px 37px #000;
 }
 
 .form-register{
-    width: 990px;
-    height: 700%;
+    width: 1000px;
+    height: 800%;
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     margin: auto;
-    margin-top: 15px;
-    border-radius: 4px;
+    margin-top: 20px;
+    border-radius: 10px;
     font-family: 'calibri';
     box-shadow: 7px 13px 37px #000;
 }
@@ -30,4 +30,4 @@ h2 {
     text-align: center;
 }
 
-/*Mostrar el primer section*/
+

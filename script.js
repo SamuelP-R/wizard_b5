@@ -11,15 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     nextBtns.forEach((btn, index) => {
         btn.addEventListener("click", function() {
+            event.preventDefault();
             tabs[index + 1].click();
         });
     });
 
     prevBtns.forEach((btn, index) => {
         btn.addEventListener("click", function() {
+            event.preventDefault();
             tabs[index].click();
         });
     });
 
 });
 
+
+//Validaciones de los formularios
